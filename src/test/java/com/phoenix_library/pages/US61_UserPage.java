@@ -17,5 +17,11 @@ public class US61_UserPage extends BasePage{
         select.selectByIndex(3);
     }
 
+    @FindBy(xpath = "//option[.='50']")
+    public WebElement recordValue;
+
+
+
+
 
 }
