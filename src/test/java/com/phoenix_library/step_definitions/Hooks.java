@@ -29,14 +29,14 @@ public class Hooks {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
-    //@Before (value = "@login", order = 2 )
-    public void login_scenario_before(){
-        System.out.println("---> @Before: RUNNING BEFORE EACH SCENARIO");
-    }
-
-    /*
-    @After will be executed automatically after EVERY scenario in the project.
-     */
+//    //@Before (value = "@login", order = 2 )
+//    public void login_scenario_before(){
+//        System.out.println("---> @Before: RUNNING BEFORE EACH SCENARIO");
+//    }
+//
+//    /*
+//    @After will be executed automatically after EVERY scenario in the project.
+//     */
     @After
     public void teardownMethod(Scenario scenario){
 
@@ -54,15 +54,15 @@ public class Hooks {
 
     }
 
-    //@BeforeStep
-    public void setupStep(){
-        System.out.println("-----> @BeforeSTEP : Running before each step!");
-    }
-
-    //@AfterStep
-    public void teardownStep(){
-        System.out.println("-----> @AfterSTEP : Running after each step!");
-    }
+//    //@BeforeStep
+//    public void setupStep(){
+//        System.out.println("-----> @BeforeSTEP : Running before each step!");
+//    }
+//
+//    //@AfterStep
+//    public void teardownStep(){
+//        System.out.println("-----> @AfterSTEP : Running after each step!");
+//    }
 
 
 }
