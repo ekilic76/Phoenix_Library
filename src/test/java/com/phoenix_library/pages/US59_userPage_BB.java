@@ -12,6 +12,10 @@ public class US59_userPage_BB extends BasePage {
     @FindBy(xpath = "//span[.='Users']")
     public WebElement userLink;
 
+    @FindBy(xpath = "//tbody//tr//td[2]")
+
+    public WebElement ids;
+
 
 
 
