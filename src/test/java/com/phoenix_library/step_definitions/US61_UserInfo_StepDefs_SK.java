@@ -1,14 +1,17 @@
 package com.phoenix_library.step_definitions;
 
 
+import com.phoenix_library.pages.US61_UserPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class US61_UserInfo_StepDefs_SK {
 
+    US61_UserPage userSK = new US61_UserPage();
     @Given("I click on User link")
     public void i_click_on_user_link() {
+        userSK.userLink.click();
 
     }
 
