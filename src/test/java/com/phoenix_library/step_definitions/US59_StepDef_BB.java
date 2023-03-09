@@ -9,12 +9,15 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class US59_StepDef_BB {
 
 
-    US59_userPage_BB userPage_bb= new US59_userPage_BB();
+    US59_userPage_BB userPage_bb = new US59_userPage_BB();
 
 
     @When("i click on {string} link")
@@ -23,34 +26,33 @@ public class US59_StepDef_BB {
         userPage_bb.userLink.click();
 
 
-
     }
+
     @Then("each users id should be unique")
     public void each_users_id_should_be_unique() {
 
 
-        List<WebElement> listOfids= Driver.getDriver().findElements(By.xpath("//tbody//tr//td[2]"));
+        List<WebElement> listOfids = Driver.getDriver().findElements(By.xpath("//tbody//tr//td[2]"));
 
-        //for (WebElement each : listOfids) {
+        Set<WebElement> setOfIds= new HashSet<>();
 
+        setOfIds.addAll(listOfids);
 
-            for (int i = 0; i < listOfids.size(); i++) {
+        List<WebElement>newList= new ArrayList<>();
 
-               Assert.assertNotEquals(listOfids.get(i),listOfids.get(i-1));
-
-
-
-                }
+        newList.addAll(setOfIds);
 
 
-            }
+        Assert.assertEquals(listOfids.size(), newList.size());
 
 
 
 
 
 
-        }
+
+    }
+}
 
 
 
