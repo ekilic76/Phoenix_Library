@@ -63,7 +63,7 @@ public abstract class BasePage {
      * NoSuchElementException will be handled  bu try/catch block
      * Thus, we can continue in any case.
      */
-    public void waitUntilLoaderScreenDisappear() {
+   public void waitUntilLoaderScreenDisappear() {
         try {
             WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
             wait.until(ExpectedConditions.invisibilityOf(loaderMask));
@@ -99,9 +99,10 @@ public abstract class BasePage {
             BrowserUtils.scrollToElement(Driver.getDriver().findElement(By.xpath(moduleLocator)));
             Driver.getDriver().findElement(By.xpath(moduleLocator)).click();
         } catch (Exception e) {
-//            BrowserUtils.waitForStaleElement(Driver.get().findElement(By.xpath(moduleLocator)));
+            BrowserUtils.waitForStaleElement(Driver.getDriver().findElement(By.xpath(moduleLocator)));
             BrowserUtils.clickWithTimeOut(Driver.getDriver().findElement(By.xpath(moduleLocator)),  5);
         }
     }
+
 
 }
