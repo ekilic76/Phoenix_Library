@@ -1,23 +1,16 @@
 package com.phoenix_library.step_definitions;
 
-import com.phoenix_library.pages.BasePage;
 import com.phoenix_library.pages.UsersPage;
 import com.phoenix_library.utilities.BrowserUtils;
-import com.phoenix_library.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.commons.collections.list.UnmodifiableList;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.RandomAccess;
 
-public class US60_StepDefs {
+public class US60_StepDefs_EE {
 
     UsersPage usersPage = new UsersPage();
 
