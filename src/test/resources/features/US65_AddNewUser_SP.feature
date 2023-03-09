@@ -9,7 +9,7 @@ Feature: Add new user functionality
     And click on "Users" module
     When user click on the Add Users
     Then dialog field must have matching placeholder
-      | full name | Full Name |
+      | full_name | Full Name |
       | email     | Email     |
       | password  | Password  |
       | address   |           |
