@@ -14,7 +14,7 @@ public class Us70Bota_StepDef {
 
     @When("I click on Users module")
     public void i_click_on_users_module() {
-        BrowserUtils.sleep(2);
+        BrowserUtils.sleep(3);
     pages.clickUsersLink();
 
     }
@@ -35,6 +35,7 @@ public class Us70Bota_StepDef {
     public void i_click_on_dashboard_link() {
         BrowserUtils.sleep(2);
         pages.clickDash();
+
 
     }
 

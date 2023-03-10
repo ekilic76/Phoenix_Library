@@ -15,6 +15,7 @@ public class US70_Bota {
 
     @FindBy (xpath = "//span[.='Books']")
     public WebElement books;
+    //
 
     @FindBy (xpath = "(//a[@class='nav-link'])[1]")
     public WebElement dashboard;
