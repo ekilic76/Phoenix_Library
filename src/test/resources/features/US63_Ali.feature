@@ -1,9 +1,9 @@
 @his
 Feature: As I user, I should be able to search values in the Users page.
 
-Background:
-Given I am on the login page
-And I login as a librarian And I click on "Users" link
+  Background:
+    Given I am on the login page
+    And I login as a librarian And I click on "Users" link
 
   Scenario: Searched accuracy
     When I search for "test"
@@ -17,4 +17,3 @@ And I login as a librarian And I click on "Users" link
       | Email |
       | Group |
       | Status |
-
