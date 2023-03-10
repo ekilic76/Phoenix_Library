@@ -8,8 +8,6 @@ Feature: Librarian manage user info table
 
   Scenario: Change number of rows in User page
     And I click on User link
-    When I select Show "50" records
+    When I selected Show "50" records
     Then show records value should be 50
-    And the users table must display "50" records
-
-
+    And the user table must display "50" records
