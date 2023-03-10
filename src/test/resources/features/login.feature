@@ -6,8 +6,8 @@ Feature: Users should be able to login
 
 
   Scenario: Verify login with different user types
-   Given the user logged in as "librarian"
-   # Given the user logged in with username as "student11@library" and password as "libraryUser"
+  # Given the user logged in as "librarian"
+   Given the user logged in with username as "student11@library" and password as "libraryUser"
 
 
 
