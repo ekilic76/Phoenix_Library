@@ -30,7 +30,7 @@ public class US63_StepDefs_AM {
         users.userLink.click();
     }
 
-    @When("I search for {string}")
+    @When("I searched for {string}")
     public void i_search_for(String searchTerm) throws InterruptedException {
         usersPage.searchBox.sendKeys(searchTerm + Keys.ENTER);
         Thread.sleep(5000);
