@@ -24,8 +24,8 @@ public class US61_UserInfo_StepDefs_SK {
 
     }
 
-    @When("I select Show {string} records")
-    public void i_select_show_records(String value) {
+    @When("I selected Show {string} records")
+    public void i_selected_show_records(String value) {
 
         Select recordValue = new Select(userPage.recordDropdown);
         recordValue.selectByValue(value);
@@ -43,7 +43,7 @@ public class US61_UserInfo_StepDefs_SK {
 
     }
 
-    @Then("the users table must display {string} records")
+    @Then("the user table must display {string} records")
     public void the_users_table_must_display_records(String expectedRecords) {
 
         int count = 0;
