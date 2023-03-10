@@ -14,6 +14,7 @@ public class UsersPage extends BasePage{
     @FindBy(css = "select[name='tbl_users_length']")
     public WebElement recordsDropDown;
 
-
+    @FindBy(xpath = "//input[@type='search']")
+    public WebElement searchBox;
 
 }
