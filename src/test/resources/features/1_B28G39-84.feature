@@ -7,7 +7,6 @@ Feature: Default
 		  Given the user logged in with username as "librarian11@library" and password as "libraryUser"
 		
 
-	@B28G39-86
 	Scenario: US59-AC01-Verify each user has unique ID.
 		Scenario: unique users ids
 		
