@@ -1,6 +1,5 @@
 package com.phoenix_library.utilities;
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -41,23 +40,23 @@ public class Driver {
              */
             switch (browserType){
                 case "chrome":
-
-                  //  WebDriverManager.chromedriver().setup();
-                    ChromeOptions options=new ChromeOptions();
-
                     //WebDriverManager.chromedriver().setup();
-                    ChromeOptions options = new ChromeOptions();
 
+
+                   
+
+                    ChromeOptions options = new ChromeOptions();
                     options.addArguments("--remote-allow-origins=*");
                     driverPool.set(new ChromeDriver(options));
+
                     driverPool.get().manage().window().maximize();
-                //    driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+                    driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                     break;
                 case "firefox":
                     //WebDriverManager.firefoxdriver().setup();
                     driverPool.set(new FirefoxDriver());
                     driverPool.get().manage().window().maximize();
-                //    driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+                    driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                     break;
             }
 
