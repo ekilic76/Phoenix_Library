@@ -16,8 +16,9 @@ public class US60_StepDefs_EE {
 
     @When("the user clicks on {string} link")
     public void the_user_clicks_on_link(String string) {
+
     usersPage.usersLink.click();
-    BrowserUtils.sleep(2);
+    BrowserUtils.sleep(5);
     }
 
     @Then("show records default value should be {int}")
